@@ -1,0 +1,15 @@
+zuul:
+  routes:
+    test:
+      path: /hi/**
+      serviceId: hi-server
+    realName:
+      path: /realName/**
+      serviceId: realname-server
+spring:
+  datasource:
+      url: jdbc:postgresql://localhost:3306/test?characterEncoding=UTF8&useUnicode=true
+      username: root
+      password: 123456
+      driver-class-name: org.postgresql.Driver
+      type: com.alibaba.druid.pool.DruidDataSource
