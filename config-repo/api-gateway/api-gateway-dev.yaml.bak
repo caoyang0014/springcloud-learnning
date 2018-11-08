@@ -1,8 +1,11 @@
 zuul:
   routes:
     test:
-      path: /common/**
-      serviceId: user-common-server
+      path: /hi/**
+      serviceId: hi-server
+    realName:
+      path: /realName/**
+      serviceId: realname-server
 spring:
   datasource:
       url: jdbc:postgresql://localhost:3306/test?characterEncoding=UTF8&useUnicode=true
